@@ -3,5 +3,5 @@ let cartCount = 0;
 function addToCart(productName, price) {
     cartCount++;
     document.getElementById('cart-count').textContent = cartCount;
-    alert(`${productName} added to cart! Price: $${price}`);
+    alert(`${productName} added to cart! Price: ${price.toFixed(2)} TK`);
 }
